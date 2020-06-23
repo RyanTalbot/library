@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #140f2d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  background-color: #483a58;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+  padding: 20px;
+  margin: auto;
+  width: 1000px;
+}
+
+table {
+  color: white;
+  padding: 5px;
+  width: 100%;
+  margin-top: 2%;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+tr th {
+  background-color: #140f2d;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+tr th:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+tr th:last-of-type {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+tr td {
+  background-color: #291f5c;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+tr td:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+tr td:last-of-type {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#deleteBtn {
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 70%;
+  margin-left: 20%;
+}
+
+#deleteBtn:hover {
+  opacity: 0.8;
+}
+
+/* FORM POPUP */
+.addToLibrary-btn {
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: teal;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.form-popup {
+  display: none;
+  position: absolute;
+  width: 320px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.form-container {
+  background-color: white;
+  color: black;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+  padding-left: 5px;
+  margin-bottom: 10px;
+  height: 20px;
+}
+
+.form-container .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgb(16, 79, 214);
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 5px;
+  border-style: none;
+  margin: 4px;
+}

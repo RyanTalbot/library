@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5b6fbacd37.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Library</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <button class="addToLibrary-btn">Add to Library</button>
+      <div class="form-popup" id="myForm">
+        <form onSubmit="return false" id="formContainer" class="form-container">
+          <div>
+            <label for="title"><b>Title</b></label>
+            <input
+              type="text"
+              id="title"
+              placeholder="Book Title"
+              name="title"
+              required
+            />
+          </div>
+          <div>
+            <label for="author"><b>Author</b></label>
+            <input
+              type="text"
+              id="author"
+              placeholder="Enter Authors Name"
+              name="author"
+              required
+            />
+          </div>
+          <div>
+            <label for="pages"><b>Pages</b></label>
+            <input
+              type="number"
+              id="pages"
+              placeholder="Number of Pages"
+              name="pages"
+              min="1"
+              required
+            />
+          </div>
+          <button type="submit" id="submit" class="btn">Submit</button>
+          <button class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
